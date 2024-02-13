@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cards.css" />
+  </head>
+  <body>
+    <a href="../home/index.html">
+      <button class="back-btn">Back</button>
+    </a>
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">All cards</li>
+          <li data-filter="gr">Gryffindor</li>
+          <li data-filter="ra">Ravenclaw</li>
+          <li data-filter="hu">Hufflepuff</li>
+          <li data-filter="sl">Slytherin</li>
+        </ul>
+      </div>
+
+      <div id="all" class="portfolio-elements"></div>
+
+      <div id="gr" class="portfolio-elements">
+        <div class="card filtr-item" data-category="gr">
+          <div class="card-header">
+            <p class="card-title">Hermione Granger</p>
+          </div>
+          <a href="../images/Hermione-Granger-card.png">
+            <img src="../images/Hermione-Granger-card.png" alt="gr" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="gr">
+          <div class="card-header">
+            <p class="card-title">Ron Weasley</p>
+          </div>
+          <a href="../images/Ron-Weasley-card.png">
+            <img src="../images/Ron-Weasley-card.png" alt="gr" />
+          </a>
+        </div>
+      </div>
+
+      <div id="ra" class="portfolio-elements">
+        <div class="card filtr-item" data-category="ra">
+          <div class="card-header">
+            <p class="card-title">Albus Dumbledore</p>
+          </div>
+          <a href="../images/Albus-Dumbledore-card.png">
+            <img src="../images/Albus-Dumbledore-card.png" alt="ra" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="ra">
+          <div class="card-header">
+            <p class="card-title">Drago Malfoy</p>
+          </div>
+          <a href="../images/Drago-Malfoy-card.png">
+            <img src="../images/Drago-Malfoy-card.png" alt="ra" />
+          </a>
+        </div>
+      </div>
+
+      <div id="hu" class="portfolio-elements">
+        <div class="card filtr-item" data-category="hu">
+          <div class="card-header">
+            <p class="card-title">Luna Lovegood</p>
+          </div>
+          <a href="../images/Luna-Lovegood-card.png">
+            <img src="../images/Luna-Lovegood-card.png" alt="hu" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="hu">
+          <div class="card-header">
+            <p class="card-title">Neville Longbottom</p>
+          </div>
+          <a href="../images/Neville-Longbottom-card.png">
+            <img src="../images/Neville-Longbottom-card.png" alt="hu" />
+          </a>
+        </div>
+      </div>
+
+      <div id="sl" class="portfolio-elements">
+        <div class="card filtr-item" data-category="sl">
+          <div class="card-header">
+            <p class="card-title">Severus Snape</p>
+          </div>
+          <a href="../images/Severus-Snape-card.png">
+            <img src="../images/Severus-Snape-card.png" alt="sl" />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="sl">
+          <div class="card-header">
+            <p class="card-title">Sirius Black</p>
+          </div>
+          <a href="../images/Sirius-Black-card.png">
+            <img src="../images/Sirius-Black-card.png" alt="sl" />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+    <script src="cards.js"></script>
+  </body>
+</html>
